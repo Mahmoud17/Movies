@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <aside class="d-flex">
+      <div
+        class="aside-content bg-dark text-white py-3 px-4 d-flex flex-column justify-content-between"
+      >
+        <ul class="list-unstyled">
+          <li><a href="#" id="playing">Now Playing</a></li>
+          <li><a href="#" id="popular">Popular</a></li>
+          <li><a href="#" id="top">Top Rated</a></li>
+          <li><a href="#" id="trending">Trending</a></li>
+          <li><a href="#" id="upcoming">Upcoming</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <div class="text-muted">
+          <p>Copyright &copy;2022 All Rights Reserved</p>
+          <p>Developed By <a href="https://github.com">Mahmoud Ayoub</a></p>
+        </div>
+      </div>
+
+      <div class="controller">
+        <img src="images/logo.png" alt="" class="d-block" />
+        <div>
+          <h4 class="text-center" id="opener">
+            <i class="fa-solid fa-bars"></i>
+          </h4>
+          <h4 class="text-center" id="closer">
+            <i class="fa-solid fa-xmark"></i>
+          </h4>
+        </div>
+
+        <div class="aside-icons text-center">
+          <i class="d-block fa-solid fa-globe"></i>
+          <i class="d-block fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <div class="container p-4">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="d-block mx-auto bg-transparent rounded-pill text-muted px-4 py-2"
+          placeholder="Search..."
+        />
+
+        <div class="gallery mt-3">
+          <div class="row g-5 mt-4"></div>
+        </div>
+      </div>
+    </main>
+
+    <section class="container">
+      <h2 class="text-white mb-5">Contact Us</h2>
+
+      <div
+        class="form d-flex flex-wrap gap-2 justify-content-between mb-5"
+        id="contact"
+      >
+        <input type="text" name="" id="name" placeholder="Enter Your Name" />
+        <input type="email" name="" id="email" placeholder="Enter Your Email" />
+        <input type="text" name="" id="phone" placeholder="Enter Your Phone" />
+        <input type="number" name="" id="age" placeholder="Enter Your Age" />
+        <input
+          type="password"
+          name=""
+          id=""
+          placeholder="Enter Your Password"
+        />
+        <input type="password" name="" id="" placeholder="Reenter Your Name" />
+
+        <button class="btn btn-dark d-block mt-4">Submit</button>
+      </div>
+    </section>
+
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

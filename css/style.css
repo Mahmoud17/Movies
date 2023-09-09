@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+aside {
+  position: fixed;
+  height: 100vh;
+  left: -300px;
+  z-index: 2;
+}
+aside li {
+  margin: 1rem;
+}
+.aside-icons i {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.aside-content {
+  width: 300px;
+}
+
+aside .controller {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.controller img {
+  width: 40px;
+}
+
+.controller h4 {
+  cursor: pointer;
+}
+
+main input {
+  outline: none;
+  border: 2px solid white;
+}
+
+.form input {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid grey;
+  color: white;
+  padding: 5px 10px;
+  width: calc(50% - 1rem);
+}
+
+@media screen and (max-width: 510px) {
+  .form input {
+    width: 100%;
+  }
+  aside .controller {
+    background-color: transparent;
+  }
+  .controller * {
+    color: white;
+  }
+  .container {
+    width: 450px;
+  }
+  .controller img,
+  .controller .aside-icons {
+    visibility: hidden;
+  }
+}
+
+.form ::placeholder {
+  text-align: center;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  transition: 0.7s;
+  height: 500px;
+  object-fit: fill;
+}
+.item:hover img {
+  scale: 1.3;
+  transform: rotate(10deg);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  visibility: hidden;
+}
+.item:hover .overlay {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.rating-average {
+  border-radius: 50%;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+  border: 1px solid greenyellow;
+  padding: 10px;
+}
